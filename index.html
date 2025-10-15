@@ -10,6 +10,7 @@
     <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
     <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles.css">
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
@@ -66,8 +67,11 @@
               </div>
               <div class="relative z-10 flex flex-col gap-2">
                 <h2 class="text-3xl font-black leading-tight">
-                  En Utopía Ok encontrarás todo lo que necesitas para embellecer tu evento.
+                  En Utopía Ok encontrarás todo lo que necesitas para 
                 </h2>
+                <div class="typewriter-container">
+                  <p class="typewriter text-3xl font-black leading-tight"></p>
+                </div>
                 <p class="text-base font-normal leading-normal">
                   ¡Con tus ideas y nuestros diseños se pueden crear momentos únicos!
                 </p>
@@ -252,27 +256,7 @@
         </footer>
       </div>
     </div>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        // Selecciona todos los enlaces del footer
-        const navLinks = document.querySelectorAll('footer nav a');
-      
-        navLinks.forEach(link => {
-          link.addEventListener('click', () => {
-            // Quita la clase "text-primary" y vuelve a aplicar "text-slate-500" a todos los enlaces
-            navLinks.forEach(l => {
-              l.classList.remove('text-primary');
-              l.classList.add('text-slate-500');
-            });
-          
-            // Agrega "text-primary" al enlace clickeado
-            link.classList.remove('text-slate-500');
-            link.classList.add('text-primary');
-          });
-        });
-      });
-    </script>
+    <script src="./scripts.js"></script>
   </body>
 
 </html>
