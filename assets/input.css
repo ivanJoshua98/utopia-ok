@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colores */
+  --color-primary: #ee5784;
+  --color-background-light: #f8f6f6;
+  --color-secondary: #bb8fee;
+  --color-font-base: #33145e;
+
+  /* Border Radius */
+  --rounded-default: 1rem;
+  --rounded-lg: 2rem;
+  --rounded-xl: 3rem;
+  --rounded-full: 9999px;
+
+  /* Font Family */
+  --font-display: "Plus Jakarta Sans", sans-serif;
+}
