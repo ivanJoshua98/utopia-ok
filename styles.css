@@ -31,4 +31,25 @@
   }
 }
 
+@keyframes show {
+  from {
+    opacity: 0%;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
 
+/* Solo en pantallas mobile */
+@media (max-width: 768px) {
+  .img-scroll {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+  }
+}
