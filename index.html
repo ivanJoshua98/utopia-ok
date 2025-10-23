@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Utipia Ok encontrá lo que necesites para tus eventos.">
-    <title>Utopía Ok</title>
+    <title>Utopía Ok – Decoración para eventos, artículos personalizados, regalería</title>
+    <meta name="description" content="En Utopía Ok creamos piezas únicas (letras 3D, remeras, sets de jardín…) para darle identidad a tus momentos o marca. Envíos a todo el pais.">
 
     <link rel="icon" type="image/png" href="./public/favicon.png" />
     <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
@@ -34,10 +34,18 @@
         <main>
           <!-- Hero -->
           <section id="inicio" class="p-4 scroll-m-20 w-full">
-            <div class="relative flex min-h-[50vh] flex-col items-center justify-center gap-6 overflow-hidden rounded-lg bg-cover bg-center p-6 text-center text-white" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("./public/hero-2.jpg")'>
-              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent">
-              </div>
-              <div class="relative z-10 flex flex-col gap-2">
+            <div class="relative flex min-h-[50vh] flex-col items-center justify-center gap-4 overflow-hidden rounded-lg text-center text-white">
+              <!-- Imagen responsiva -->
+              <picture class="absolute inset-0 -z-10">
+                <!-- Imagen para desktop -->
+                <source media="(min-width: 768px)" srcset="./public/hero-2.webp" type="image/webp">
+                <!-- Imagen para mobile -->
+                <img src="./public/hero-2-mobile.webp" alt="Decoraciones y regalos personalizados - Utopía Ok" class="h-full w-full object-cover" loading="eager">
+              </picture>
+              <!-- Capa de gradiente -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 to-black/20"></div>
+              <!-- Contenido del Hero -->
+              <div class="relative z-10 flex flex-col gap-2 p-6">
                 <h2 class="text-3xl font-black leading-tight text-shadow-lg">
                   En Utopía Ok encontrarás todo lo que necesitas para 
                 </h2>
@@ -48,7 +56,8 @@
                   ¡Con tus ideas y nuestros diseños se pueden crear momentos únicos!
                 </p>
               </div>
-              <a href="https://utopiaok.mitiendanube.com/productos/" target="_blank" rel="noopener noreferrer" class="relative z-10 rounded-lg bg-primary px-6 py-3 text-sm font-bold text-white shadow-lg cursor-pointer transition transform duration-300 ease-in-out hover:scale-105">
+              <a href="https://utopiaok.mitiendanube.com/productos/" target="_blank" rel="noopener noreferrer" 
+                 class="relative z-10 rounded-lg bg-primary px-6 py-3 mb-3 text-sm font-bold text-white shadow-lg cursor-pointer transition transform duration-300 ease-in-out hover:scale-105">
                 Ver Productos
               </a>
             </div>
@@ -131,32 +140,74 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 place-self-center">
               <!-- Producto -->
               <div class="w-fit h-fit bg-transparent rounded-lg shadow dark:shadow-black p-4 text-center cursor-pointer transition transform duration-300 ease-in-out hover:scale-105">
-                <img src="./productos-destacados/letras-3d.webp" alt="Castillo Arcoiris" class="mx-auto mb-4 rounded object-cover h-[331px]">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./productos-destacados/letras-3d.webp" type="image/webp">
+                  <img 
+                    src="./productos-destacados/letras-3d-mobile.webp" 
+                    alt="Letras 3D personalizadas - Utopía Ok" 
+                    class="mx-auto mb-4 rounded object-cover h-[331px]" 
+                    loading="lazy">
+                </picture>
                 <h4 class="font-medium">Letras 3D</h4>
               </div>
               <!-- Producto -->
               <div class="w-fit h-fit bg-transparent rounded-lg shadow dark:shadow-black p-4 text-center cursor-pointer transition transform duration-300 ease-in-out hover:scale-105">
-                <img src="./productos-destacados/remera-promocional.webp" alt="Castillo Arcoiris" class="mx-auto mb-4 rounded object-cover h-[331px]">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./productos-destacados/remera-promocional.webp" type="image/webp">
+                  <img 
+                    src="./productos-destacados/remera-promocional-mobile.webp" 
+                    alt="Remeras promocionales personalizadas - Utopía Ok" 
+                    class="mx-auto mb-4 rounded object-cover h-[331px]" 
+                    loading="lazy">
+                </picture>
                 <h4 class="font-medium">Remeras promocionales</h4>
               </div>
               <!-- Producto -->
               <div class="w-fit h-fit bg-transparent rounded-lg shadow dark:shadow-black p-4 text-center cursor-pointer transition transform duration-300 ease-in-out hover:scale-105">
-                <img src="./productos-destacados/deco-cumple.webp" alt="Castillo Arcoiris" class="mx-auto mb-4 rounded object-cover h-[331px]">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./productos-destacados/deco-cumple.webp" type="image/webp">
+                  <img 
+                    src="./productos-destacados/deco-cumple-mobile.webp" 
+                    alt="Decoración de cumpleaños personalizada - Utopía Ok" 
+                    class="mx-auto mb-4 rounded object-cover h-[331px]" 
+                    loading="lazy">
+                </picture>
                 <h4 class="font-medium">Deco cumpleaños</h4>
               </div>
               <!-- Producto -->
               <div class="w-fit h-fit bg-transparent rounded-lg shadow dark:shadow-black p-4 text-center cursor-pointer transition transform duration-300 ease-in-out hover:scale-105">
-                <img src="./productos-destacados/tatuajes-temporales.webp" alt="Castillo Arcoiris" class="mx-auto mb-4 rounded object-cover h-[331px]">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./productos-destacados/tatuajes-temporales.webp" type="image/webp">
+                  <img 
+                    src="./productos-destacados/tatuajes-temporales-mobile.webp" 
+                    alt="Tatuajes temporales personalizados - Utopía Ok" 
+                    class="mx-auto mb-4 rounded object-cover h-[331px]" 
+                    loading="lazy">
+                </picture>
                 <h4 class="font-medium">Tatuajes temporales</h4>
               </div>
               <!-- Producto -->
               <div class="w-fit h-fit bg-transparent rounded-lg shadow dark:shadow-black p-4 text-center cursor-pointer transition transform duration-300 ease-in-out hover:scale-105">
-                <img src="./productos-destacados/set-de-jardin.webp" alt="Castillo Arcoiris" class="mx-auto mb-4 rounded object-cover h-[331px]">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./productos-destacados/set-de-jardin.webp" type="image/webp">
+                  <img 
+                    src="./productos-destacados/set-de-jardin-mobile.webp" 
+                    alt="Set de jardín artesanal - Utopía Ok" 
+                    class="mx-auto mb-4 rounded object-cover h-[331px]" 
+                    loading="lazy">
+                </picture>
                 <h4 class="font-medium">Sets de jardín</h4>
               </div>
               <!-- Producto -->
               <div class="w-fit h-fit bg-transparent rounded-lg shadow dark:shadow-black p-4 text-center cursor-pointer transition transform duration-300 ease-in-out hover:scale-105">
-                <img src="./productos-destacados/regalo-personalizado.webp" alt="Castillo Arcoiris" class="mx-auto mb-4 rounded object-cover h-[331px]">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./productos-destacados/regalo-personalizado.webp" type="image/webp">
+                  <img 
+                    src="./productos-destacados/regalo-personalizado-mobile.webp" 
+                    alt="Regalos personalizados para eventos - Utopía Ok" 
+                    class="mx-auto mb-4 rounded object-cover h-[331px]" 
+                    loading="lazy">
+                </picture>
                 <h4 class="font-medium">Regalo personalizado</h4>
               </div>
             </div>
@@ -166,29 +217,32 @@
             <div class="p-4">
               <h3 class="py-4 text-2xl font-bold text-center">¿Quiénes somos?</h3>
               <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
-
-                <!-- Imagen con efecto hover y texto -->
                 <div class="relative justify-self-center self-center h-[331px] w-auto group rounded-lg overflow-hidden">
-                  <img src="./public/nosotras-dos.webp" alt="Miembro del equipo"
-                    class="h-full w-full object-cover rounded-lg transition duration-300 ease-in-out group-hover:blur-sm" />
+                  <picture>
+                    <!-- Imagen desktop -->
+                    <source media="(min-width: 768px)" srcset="./public/nosotras-dos.webp" type="image/webp">
+                    <!-- Imagen mobile -->
+                    <img 
+                      src="./public/nosotras-mobile.webp" 
+                      alt="Lucía Vega y su hermana, cofundadoras de Utopía Ok, taller de decoración y regalos personalizados" 
+                      class="h-full w-full object-cover rounded-lg transition duration-300 ease-in-out group-hover:blur-sm"
+                      loading="lazy"
+                    >
+                  </picture>
                   <div class="absolute inset-0 grid text-center content-center bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300">
                     <span class="text-white text-lg font-semibold">Lucia Vega</span>
                     <span class="text-white text-lg font-semibold mb-2">Co-fundadora</span>
                   </div>
                 </div>
-              
-                <!-- Texto descriptivo -->
                 <div class="p-4 col-span-2">
-                  <p>✨Lo que empezó como un ingreso extra se transformó en nuestra pasión —dar vida a cada detalle que hace especial un momento o un emprendimiento—. Somos dos hermanas que, hace más de 5 años, convertimos una idea simple en nuestro primer gran proyecto: Utopía.</p>
+                  <p>✨Lo que empezó como un ingreso extra se transformó en nuestra pasión: dar vida a cada detalle que hace especial un momento o un emprendimiento. Somos dos hermanas que, hace más de 5 años, convertimos una idea simple en nuestro primer gran proyecto: <strong>Utopía Ok</strong>.</p>
                   <p class="mt-4">En nuestro pequeño taller creamos con dedicación todo tipo de piezas personalizadas: desde decoración para cumpleaños y cotillón, hasta remeras, stickers, tarjetería, regalería y mucho más.</p>
                   <p class="mt-4">Cada diseño está hecho con amor, buscando que refleje la historia y la esencia de quien lo recibe. Nos encanta acompañar a quienes eligen regalar algo único o darle identidad a su marca.</p>
                   <p class="mt-4">Utopía es eso: el sueño que se volvió realidad gracias a la creatividad, al trabajo compartido y a las personas que confían en nosotras día a día. ✨</p>
                 </div>
-              
               </div>
             </div>
           </section>
-
           <!-- Contacto -->
           <section id="contacto" class="px-4 py-6 scroll-m-20">
             <h3 class="pb-4 text-center text-2xl font-bold">Síguenos</h3>
